@@ -194,9 +194,17 @@ h2{
     .header-pic{
         display: none;
     }
+    #header .header-column .header-row{
+        justify-content: center;
+    }
 }
 @media (min-width:760px){
     .nav-buttons{
         display: none;
+    }
+}
+@media (max-width:375px){
+    .custom-hero{
+        height: 120vh;
     }
 }
