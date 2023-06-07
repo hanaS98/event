@@ -31,8 +31,8 @@ body{
 .overlay.overlay-op-5:hover:before, .overlay.overlay-op-5.overlay-show:before, .overlay.overlay-op-5.show:before{
     opacity: 0;
 }
-.custom-row-about .col-12{
-    height: 450px;
+.img-edit{
+    width: 250px;
 }
 .custom-hero-heading em{
     color: white;
