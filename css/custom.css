@@ -155,14 +155,14 @@ h2{
     color: white;
 }
 .header-box{
-    width: 135px;
-    height: 135px;
+    width: 125px;
+    height: 125px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 5px;
-    background-color: #009688bf;
+    background-color: #96f7f457;
     box-shadow: 0 0 5px 0 #00000024;
     margin: 0 10px 10px 0;
 }
@@ -170,7 +170,7 @@ h2{
     justify-content: center;
 }
 .header-box i{
-    font-size: 35px;
+    font-size: 25px;
     color: white;
 }
 .header-box p{
@@ -211,13 +211,7 @@ h2{
     }
 }
 @media (max-width:420px){
-    /* .custom-hero{
-        height: 120vh;
-    }  */
-    .bg-rad{
-        height: 100%;
-        bottom: 20px;
-    }
+   
     .header-logo-pic a img{
         width: 100%;
     }
@@ -226,16 +220,7 @@ h2{
         width: 100%;
     }
     
-    .header-box {
-        width: 110px;
-        height: 110px;
-    }
-    .header-box i{
-        font-size: 22px;
-    }
-    .header-box p{
-        font-size: 13px;
-    }
+    
 }
 
 
