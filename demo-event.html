@@ -94,9 +94,9 @@
 						<div class="header-row">
 							<div class="header-column">
 								<div class="header-row">
-									<div class="header-logo">
+									<div class="header-logo-pic">
 										<a href="demo-event.html">
-											<img src="pic/logo-9.png" class="" width="150" alt="" />
+											<img src="pic/logo-9.png" class="" alt="" />
 										</a>
 									</div>
 									<div
@@ -107,9 +107,9 @@
 											margin: 0 8px;
 										"
 									></div>
-									<div>
+									<div class="sgs-logo">
 										<a href="demo-event.html">
-											<img src="pic/sgsLogo.png" class="" width="250" alt="" />
+											<img src="pic/sgsLogo.png" class="" alt="" />
 										</a>
 									</div>
 								</div>
@@ -210,7 +210,7 @@
 					<div class="container position-relative z-index-3 h-100">
 						<div class="row align-items-center h-100 landing">
 							<div class="col-8">
-								<div class="countdown"></div>
+								
 								<strong
 									class="d-block text-color-light font-weight-semibold text-uppercase text-4 appear-animation"
 									data-appear-animation="fadeIn"
@@ -292,37 +292,7 @@
 								</a>
 							</div> -->
 						</div>
-						<!-- <div class="row counters">
-							<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-								<div class="counter counter-primary">
-									<strong data-to="45000" data-append="+">45000+</strong>
-									<label>Happy Clients</label>
-								</div>
-							</div>
-							<div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
-								<div class="counter counter-secondary">
-									<strong data-to="15">15</strong>
-									<label>Years in Business</label>
-								</div>
-							</div>
-							<div class="col-sm-6 col-lg-3 mb-4 mb-sm-0">
-								<div class="counter counter-tertiary">
-									<strong data-to="352">352</strong>
-									<label>Cups of Coffee</label>
-								</div>
-							</div>
-							<div class="col-sm-6 col-lg-3">
-								<div class="counter counter-quaternary">
-									<strong data-to="178">178</strong>
-									<label>High Score</label>
-								</div>
-							</div>
-						</div> -->
-						<!-- <div class="row">
-							<div class="col">
-								<div class="countdown countdown-secondary" data-plugin-countdown data-plugin-options="{'date': '2024/01/01 12:00:00', 'numberClass': 'font-weight-extra-bold'}"><span class="days"><span class=" font-weight-extra-bold">209</span> DAYS</span> <span class="hours"><span class=" font-weight-extra-bold">01</span> HRS</span> <span class="minutes"><span class=" font-weight-extra-bold">37</span> MIN</span> <span class="seconds"><span class=" font-weight-extra-bold">54</span> SEC</span> </div>
-							</div>
-						</div> -->
+						
 					</div>
 				</section>
 
@@ -979,6 +949,10 @@
 							referrerpolicy="no-referrer-when-downgrade"
 						></iframe>
 					</div>
+
+					<!-- <div class="appear-animation" data-appear-animation="fadeIn" data-plugin-options="{'minWindowWidth': 0}" data-appear-animation-delay="0">
+						<div id="googlemaps" class="google-map m-0" style="height: 400px;"></div>
+					</div> -->
 				</section>
 			</div>
 
@@ -1033,7 +1007,7 @@
 
 		<!-- <script src="vendor/jquery/jquery.js"></script>
 
-		<script src="vendor/jquery.countdown/jquery.countdown.min.js"></script> -->
+		
 
 		<!-- Theme Base, Components and Settings -->
 		<script src="js/theme.js"></script>
@@ -1054,7 +1028,7 @@
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
 
-		<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+		<script src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59371.491404816355!2d39.27650939002014!3d21.557870937887493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d229c6e588f9%3A0x9ca1df9571eced46!2z2YfZitim2Kkg2KfZhNmF2LPYp9it2Kkg2KfZhNis2YrZiNmE2YjYrNmK2Kkg2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2ssa!4v1685953460056!5m2!1sar!2ssa"></script>
 		<script>
 			/*
 			Map Settings
@@ -1065,136 +1039,136 @@
 
 			*/
 
-			function initializeGoogleMaps() {
-				// Map Markers
-				var mapMarkers = [
-					{
-						address: 'New York, NY 10017',
-						icon: {
-							image: 'img/blank.gif',
-							iconsize: [31, 40],
-							iconanchor: [31, 40],
-						},
-					},
-				];
+			// function initializeGoogleMaps() {
+			// 	// Map Markers
+			// 	var mapMarkers = [
+			// 		{
+			// 			address: 'New York, NY 10017',
+			// 			icon: {
+			// 				image: 'img/blank.gif',
+			// 				iconsize: [31, 40],
+			// 				iconanchor: [31, 40],
+			// 			},
+			// 		},
+			// 	];
 
-				// Map Initial Location
-				var initLatitude = 40.75198;
-				var initLongitude = -73.96978;
+			// 	// Map Initial Location
+			// 	var initLatitude = 40.75198;
+			// 	var initLongitude = -73.96978;
 
-				// Map Extended Settings
-				var mapSettings = {
-					controls: {
-						draggable: false,
-						panControl: false,
-						zoomControl: false,
-						mapTypeControl: false,
-						scaleControl: false,
-						streetViewControl: false,
-						overviewMapControl: false,
-					},
-					scrollwheel: false,
-					markers: mapMarkers,
-					latitude: initLatitude,
-					longitude: initLongitude,
-					zoom: 14,
-				};
+			// 	// Map Extended Settings
+			// 	var mapSettings = {
+			// 		controls: {
+			// 			draggable: false,
+			// 			panControl: false,
+			// 			zoomControl: false,
+			// 			mapTypeControl: false,
+			// 			scaleControl: false,
+			// 			streetViewControl: false,
+			// 			overviewMapControl: false,
+			// 		},
+			// 		scrollwheel: false,
+			// 		markers: mapMarkers,
+			// 		latitude: initLatitude,
+			// 		longitude: initLongitude,
+			// 		zoom: 14,
+			// 	};
 
-				var map = $('#googlemaps').gMap(mapSettings),
-					mapRef = $('#googlemaps').data('gMap.reference');
+			// 	var map = $('#googlemaps').gMap(mapSettings),
+			// 		mapRef = $('#googlemaps').data('gMap.reference');
 
-				// Styles from https://snazzymaps.com/
-				var styles = [
-					{
-						featureType: 'water',
-						elementType: 'geometry',
-						stylers: [{ color: '#e9e9e9' }, { lightness: 17 }],
-					},
-					{
-						featureType: 'landscape',
-						elementType: 'geometry',
-						stylers: [{ color: '#f5f5f5' }, { lightness: 20 }],
-					},
-					{
-						featureType: 'road.highway',
-						elementType: 'geometry.fill',
-						stylers: [{ color: '#ffffff' }, { lightness: 17 }],
-					},
-					{
-						featureType: 'road.highway',
-						elementType: 'geometry.stroke',
-						stylers: [{ color: '#ffffff' }, { lightness: 29 }, { weight: 0.2 }],
-					},
-					{
-						featureType: 'road.arterial',
-						elementType: 'geometry',
-						stylers: [{ color: '#ffffff' }, { lightness: 18 }],
-					},
-					{
-						featureType: 'road.local',
-						elementType: 'geometry',
-						stylers: [{ color: '#ffffff' }, { lightness: 16 }],
-					},
-					{
-						featureType: 'poi',
-						elementType: 'geometry',
-						stylers: [{ color: '#f5f5f5' }, { lightness: 21 }],
-					},
-					{
-						featureType: 'poi.park',
-						elementType: 'geometry',
-						stylers: [{ color: '#dedede' }, { lightness: 21 }],
-					},
-					{
-						elementType: 'labels.text.stroke',
-						stylers: [
-							{ visibility: 'on' },
-							{ color: '#ffffff' },
-							{ lightness: 16 },
-						],
-					},
-					{
-						elementType: 'labels.text.fill',
-						stylers: [
-							{ saturation: 36 },
-							{ color: '#333333' },
-							{ lightness: 40 },
-						],
-					},
-					{ elementType: 'labels.icon', stylers: [{ visibility: 'off' }] },
-					{
-						featureType: 'transit',
-						elementType: 'geometry',
-						stylers: [{ color: '#f2f2f2' }, { lightness: 19 }],
-					},
-					{
-						featureType: 'administrative',
-						elementType: 'geometry.fill',
-						stylers: [{ color: '#fefefe' }, { lightness: 20 }],
-					},
-					{
-						featureType: 'administrative',
-						elementType: 'geometry.stroke',
-						stylers: [{ color: '#fefefe' }, { lightness: 17 }, { weight: 1.2 }],
-					},
-				];
+			// 	// Styles from https://snazzymaps.com/
+			// 	var styles = [
+			// 		{
+			// 			featureType: 'water',
+			// 			elementType: 'geometry',
+			// 			stylers: [{ color: '#e9e9e9' }, { lightness: 17 }],
+			// 		},
+			// 		{
+			// 			featureType: 'landscape',
+			// 			elementType: 'geometry',
+			// 			stylers: [{ color: '#f5f5f5' }, { lightness: 20 }],
+			// 		},
+			// 		{
+			// 			featureType: 'road.highway',
+			// 			elementType: 'geometry.fill',
+			// 			stylers: [{ color: '#ffffff' }, { lightness: 17 }],
+			// 		},
+			// 		{
+			// 			featureType: 'road.highway',
+			// 			elementType: 'geometry.stroke',
+			// 			stylers: [{ color: '#ffffff' }, { lightness: 29 }, { weight: 0.2 }],
+			// 		},
+			// 		{
+			// 			featureType: 'road.arterial',
+			// 			elementType: 'geometry',
+			// 			stylers: [{ color: '#ffffff' }, { lightness: 18 }],
+			// 		},
+			// 		{
+			// 			featureType: 'road.local',
+			// 			elementType: 'geometry',
+			// 			stylers: [{ color: '#ffffff' }, { lightness: 16 }],
+			// 		},
+			// 		{
+			// 			featureType: 'poi',
+			// 			elementType: 'geometry',
+			// 			stylers: [{ color: '#f5f5f5' }, { lightness: 21 }],
+			// 		},
+			// 		{
+			// 			featureType: 'poi.park',
+			// 			elementType: 'geometry',
+			// 			stylers: [{ color: '#dedede' }, { lightness: 21 }],
+			// 		},
+			// 		{
+			// 			elementType: 'labels.text.stroke',
+			// 			stylers: [
+			// 				{ visibility: 'on' },
+			// 				{ color: '#ffffff' },
+			// 				{ lightness: 16 },
+			// 			],
+			// 		},
+			// 		{
+			// 			elementType: 'labels.text.fill',
+			// 			stylers: [
+			// 				{ saturation: 36 },
+			// 				{ color: '#333333' },
+			// 				{ lightness: 40 },
+			// 			],
+			// 		},
+			// 		{ elementType: 'labels.icon', stylers: [{ visibility: 'off' }] },
+			// 		{
+			// 			featureType: 'transit',
+			// 			elementType: 'geometry',
+			// 			stylers: [{ color: '#f2f2f2' }, { lightness: 19 }],
+			// 		},
+			// 		{
+			// 			featureType: 'administrative',
+			// 			elementType: 'geometry.fill',
+			// 			stylers: [{ color: '#fefefe' }, { lightness: 20 }],
+			// 		},
+			// 		{
+			// 			featureType: 'administrative',
+			// 			elementType: 'geometry.stroke',
+			// 			stylers: [{ color: '#fefefe' }, { lightness: 17 }, { weight: 1.2 }],
+			// 		},
+			// 	];
 
-				var styledMap = new google.maps.StyledMapType(styles, {
-					name: 'Styled Map',
-				});
+			// 	var styledMap = new google.maps.StyledMapType(styles, {
+			// 		name: 'Styled Map',
+			// 	});
 
-				mapRef.mapTypes.set('map_style', styledMap);
-				mapRef.setMapTypeId('map_style');
-			}
+			// 	mapRef.mapTypes.set('map_style', styledMap);
+			// 	mapRef.setMapTypeId('map_style');
+			// }
 
-			// Initialize Google Maps when element enter on browser view
-			theme.fn.intObs('.google-map', 'initializeGoogleMaps()', {});
+			// // Initialize Google Maps when element enter on browser view
+			// theme.fn.intObs('.google-map', 'initializeGoogleMaps()', {});
 
-			// Map text-center At
-			var mapCenterAt = function (options, e) {
-				e.preventDefault();
-				$('#googlemaps').gMap('centerAt', options);
-			};
+			// // Map text-center At
+			// var mapCenterAt = function (options, e) {
+			// 	e.preventDefault();
+			// 	$('#googlemaps').gMap('centerAt', options);
+			// };
 		</script>
 	</body>
 </html>
